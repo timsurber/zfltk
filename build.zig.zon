@@ -1,10 +1,16 @@
 .{
     .name = .zfltk,
     .version = "0.0.5", // zig 0.15.0
+    .minimum_zig_version = "0.14.1",
+    .dependencies = .{
+        .cfltk = .{
+            .url = "https://github.com/timsurber/cfltk/archive/98e9c06bc3e19dac99bd6cf8adcc2c2b3dac4a47.zip",
+            .hash = "cfltk-1.5.14-RwvqGSwOAAA_a_Np6Ntt2uL2OEFa6USBiR4C1t7IA3aV",
+        },
+    },
     .paths = .{
         "src",
         "build.zig",
-        "build_utils.zig",
         "build.zig.zon",
         "LICENSE",
         "README.md",
